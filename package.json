@@ -1,0 +1,20 @@
+{
+  "name": "surveys-api",
+  "version": "1.0.0",
+  "description": "A survey API made with nodeJS utilizing TypeScript, TDD and Clean Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edubarr/surveys-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edubarr/surveys-api/issues"
+  },
+  "homepage": "https://github.com/edubarr/surveys-api#readme"
+}
