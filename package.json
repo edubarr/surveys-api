@@ -19,7 +19,11 @@
   "homepage": "https://github.com/edubarr/surveys-api#readme",
   "devDependencies": {
     "@types/node": "^18.11.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
     "git-commit-msg-linter": "^4.2.1",
+    "prettier": "2.7.1",
     "typescript": "^4.8.4"
   }
 }
