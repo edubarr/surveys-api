@@ -4,8 +4,8 @@
   "description": "A survey API made with nodeJS utilizing TypeScript, TDD and Clean Code",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:staged": "jest",
+    "test": "jest --passWithNoTests",
+    "test:staged": "jest --passWithNoTests",
     "prepare": "husky install"
   },
   "repository": {
