@@ -4,13 +4,14 @@ import { badRequest } from "../helpers/https-helper";
 
 export class SignUpController {
   handle(httpRequest: HttpRequest): HttpResponse {
-    if (httpRequest.body.name == null) {
-      return badRequest(new MissingParamError("name"));
+    const requiredFields = ["name", "email"];
+
+    for (const field of requiredFields) {
+      if (httpRequest.body[field] == null) {
+        return badRequest(new MissingParamError(field));
+      }
     }
-    if (httpRequest.body.email == null) {
-      return badRequest(new MissingParamError("email"));
-    } else {
-      return badRequest(new MissingParamError("default"));
-    }
+
+    return badRequest(new MissingParamError("default"));
   }
 }
