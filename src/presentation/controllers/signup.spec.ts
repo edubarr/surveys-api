@@ -55,8 +55,8 @@ describe("SignUp Controller", () => {
     const { sut } = makeSut();
     const httpRequest = {
       body: {
-        email: "any_email@mail.com",
         name: "any_name",
+        email: "any_email@mail.com",
         passwordConfirmation: "any_password",
       },
     };
@@ -69,8 +69,8 @@ describe("SignUp Controller", () => {
     const { sut } = makeSut();
     const httpRequest = {
       body: {
-        email: "any_email@mail.com",
         name: "any_name",
+        email: "any_email@mail.com",
         password: "any_password",
       },
     };
@@ -86,8 +86,8 @@ describe("SignUp Controller", () => {
     jest.spyOn(emailValidatorStub, "isValid").mockReturnValueOnce(false);
     const httpRequest = {
       body: {
-        email: "invalid_email@mail.com",
         name: "any_name",
+        email: "invalid_email@mail.com",
         password: "any_password",
         passwordConfirmation: "any_password",
       },
@@ -102,8 +102,8 @@ describe("SignUp Controller", () => {
     const isValidSpy = jest.spyOn(emailValidatorStub, "isValid");
     const httpRequest = {
       body: {
-        email: "any_email@mail.com",
         name: "any_name",
+        email: "any_email@mail.com",
         password: "any_password",
         passwordConfirmation: "any_password",
       },
